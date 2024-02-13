@@ -1,0 +1,213 @@
+html {
+    font-family: "Hedvig Letters Serif", serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h2 {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.main-content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    background: radial-gradient(#ffafaf, #fff);
+    /*linear-gradient(to bottom, #ffafaf, #fff); */
+}
+
+/*--------------------------------
+MAIN design
+-------------------------------- */
+.main-head {
+    padding: 0;
+    position: relative;
+    background: none;
+}
+
+.head-background {
+    width: 100%;
+    position: relative;
+}
+
+.head-background::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, #ffffff, transparent);
+}
+
+.head-background img {
+    width: 100%;
+}
+
+.main-head h1 {
+    font-size: 2rem;
+    min-width: 150px;
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+}
+
+@media screen and (max-width: 600px) {
+    .main-head h1 {
+        font-size : 1rem;
+    }
+}
+
+/*--------------------------------
+ABOUT design
+-------------------------------- */
+.main-about {
+    padding-top: 50px;
+}
+
+.about-content h3 {
+    width: 200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #555555;
+}
+
+/*--------------------------------
+WORKS design
+-------------------------------- */
+.main-works {
+    background: radial-gradient(#ffafaf, #fff);
+}
+
+.works-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.work-content {
+    background: #fff;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ff5a5a;
+    display: flex;
+    flex-flow: column;
+}
+
+.work-photo {
+    width: 100%;
+    display: block;
+}
+
+.work-photo img {
+    width: 100%;
+    transition: .3s;
+}
+
+.work-photo img:hover {
+    opacity: .5;
+}
+
+h3 {
+    padding: 10px;
+    margin: 0;
+}
+
+/* Work Buttons */
+.work-links {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 250px;
+    margin: 10px auto;
+}
+
+.work-btn {
+    background: #ffafaf;
+    width: 90px;
+    height: 100%;
+    margin: 0 10px;
+}
+
+.work-btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* work-info */
+.work1-info {
+    margin-top: 5px;
+}
+
+.work1-info h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.work1-info p {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+/*--------------------------------
+LINKS CONTAINER design
+-------------------------------- */
+.links-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.link {
+    width: 200px;
+    height: 50px;
+    margin: 10px 2px;
+    padding: 10px 5px;
+    background: #ffafaf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    border-bottom: 3px solid #ff5a5a;
+}
+
+.link-icon i {
+    font-size: 30px;
+}
+
+.link-name {
+    margin: 0 auto;
+}
+
+/*--------------------------------
+LINKS CONTAINER design
+-------------------------------- */
+footer {
+    background: linear-gradient(to bottom, #ffafaf, #fff);
+    padding: 50px;
+}
+
+.footer-copyright {
+    text-align: center;
+}
