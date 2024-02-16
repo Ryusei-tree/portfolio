@@ -119,12 +119,8 @@ WORKS design
 
 .work-photo img {
     width: 100%;
-    transition: .3s;
 }
 
-.work-photo img:hover {
-    opacity: .5;
-}
 
 h3 {
     padding: 10px;
@@ -147,6 +143,11 @@ h3 {
     width: 90px;
     height: 100%;
     margin: 0 10px;
+    transition: .3s;
+}
+
+.work-btn:hover {
+    opacity: .5;
 }
 
 .work-btn a {
