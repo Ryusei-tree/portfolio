@@ -16,17 +16,15 @@ a {
 h2 {
     width: 100%;
     margin: 0 auto;
-    padding-bottom: 30px;
+    padding: 80px 0;
+    background: radial-gradient(150px 40px, #ffafaf 30%, #fff 100%);
 }
 
 .main-content {
     width: 100%;
     margin: 0 auto;
     padding: 50px 0;
-    background: radial-gradient(#ffafaf, #fff);
-    /*linear-gradient(to bottom, #ffafaf, #fff); */
 }
-
 /*--------------------------------
 MAIN design
 -------------------------------- */
@@ -90,9 +88,6 @@ ABOUT design
 /*--------------------------------
 WORKS design
 -------------------------------- */
-.main-works {
-    background: radial-gradient(#ffafaf, #fff);
-}
 
 .works-container {
     display: flex;
@@ -110,6 +105,11 @@ WORKS design
     border: 1px solid #ff5a5a;
     display: flex;
     flex-flow: column;
+    transition: .3s;
+}
+
+.work-content:hover {
+    transform: scale(1.05);
 }
 
 .work-photo {
@@ -139,15 +139,11 @@ h3 {
 }
 
 .work-btn {
-    background: #ffafaf;
     width: 90px;
     height: 100%;
     margin: 0 10px;
-    transition: .3s;
-}
-
-.work-btn:hover {
-    opacity: .5;
+    border: 1px solid #ff5a5a;
+    
 }
 
 .work-btn a {
@@ -155,6 +151,14 @@ h3 {
     justify-content: center;
     align-items: center;
     height: 100%;
+    background: #ffafaf;
+    transition: .3s;
+}
+
+.work-btn a:hover {
+    background: #fff;
+    color: #ff5a5a;
+    font-weight: bold;
 }
 
 /* work-info */
@@ -181,19 +185,26 @@ LINKS CONTAINER design
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 .link {
-    width: 200px;
-    height: 50px;
+    width: 230px;
+    height: 75px;
     margin: 10px 2px;
-    padding: 10px 5px;
+    padding: 20px 5px;
     background: #ffafaf;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    border-bottom: 3px solid #ff5a5a;
+    border-bottom: solid 3px #ff5a5a;
+    box-sizing: border-box;
+    transition: .1s;
+}
+
+.link:hover {
+    border: solid 3px #ff5a5a;
 }
 
 .link-icon i {
@@ -202,6 +213,12 @@ LINKS CONTAINER design
 
 .link-name {
     margin: 0 auto;
+    font-size: .9em;
+    margin-top: 5px;
+}
+
+.fa-phone {
+    font-size: 0.8em;
 }
 
 /*--------------------------------
